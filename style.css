@@ -1,0 +1,30 @@
+body{
+  background-color: #572364;
+  color: white;
+}
+
+.Nom_Marque{
+  text-align: center;
+  background-color: black;
+}
+
+#PC{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-color: black;
+}
+
+#PS4{
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  background-color: black;
+}
+
+#XboxOne{
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  background-color: black;
+}
