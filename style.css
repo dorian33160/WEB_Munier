@@ -10,21 +10,21 @@ body{
 
 #PC{
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 50px;
   background-color: black;
 }
 
 #PS4{
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 150px;
   background-color: black;
 }
 
 #XboxOne{
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 250px;
   background-color: black;
 }
