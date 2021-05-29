@@ -17,9 +17,12 @@ $results = $db->query('SELECT * FROM infosJeu');
 <ul>
 
 <?php
+echo "<div>";
 while ($row = $results->fetchArray()) {
  echo "<li>{$row['infosJeu']}-{$row['infosEditeur']}-{$row['infosClient']}-{$row['infosPLateforme']}-{$row['infosPayement']}-{$row['panier']}-{$row['achat']} </li>";
 }
+echo "</div>";
+
 ?>
 
 </ul>
