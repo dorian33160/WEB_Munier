@@ -19,7 +19,7 @@ $results = $db->query('SELECT * FROM infosJeu');
 <?php
 echo "<div>";
 while ($row = $results->fetchArray()) {
- echo "<li>{$row['infosJeu']}-{$row['infosEditeur']}-{$row['infosClient']}-{$row['infosPLateforme']}-{$row['infosPayement']}-{$row['panier']}-{$row['achat']} </li>";
+ echo "<li>{$row['NumJeu']}-{$row['Nom']}-{$row['Prix']}-{$row['DateSortie']}-{$row['Style']}-{$row['Editeur']}-{$row['PEGI']}-{$row['Langue']}-{$row['NumPlateforme']} </li>";
 }
 echo "</div>";
 
