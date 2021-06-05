@@ -1,44 +1,4 @@
-body{
-  background-color: #572364;
-  color: white;
-}
-
-.Nom_Marque{
-  text-align: center;
-  background-color: black;
-}
-
-#PC{
-  position: absolute;
-  top: 150px;
-  left: 50px;
-  background-color: black;
-}
-
-#PS4{
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  background-color: black;
-}
-
-#XboxOne{
-  position: absolute;
-  top: 150px;
-  left: 250px;
-  background-color: black;
-}
-
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    margin: .4rem 0;
-}
-
-#Tous_nos_jeux{
-  text-align: center;
+.image_R6{
+  width: 200px;
+  height: 200px;
 }
