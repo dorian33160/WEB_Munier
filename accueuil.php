@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Premier exemple php sqlite</title>
+    <title>Game-In</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -9,34 +9,57 @@
 
 <body>
 
-<?php
-try{
- $pdo = new PDO('sqlite:jeux.db');
- $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
- $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
- //echo "Connecté à la base SQLite jeux.db<br>";
+  <?php
+  try{
+   $pdo = new PDO('sqlite:jeux.db');
+   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
+   //echo "Connecté à la base SQLite jeux.db<br>";
 
- // Création d'une requête SQL sur une table
- $stmt = $pdo->prepare("SELECT * FROM infosJeu");
- $stmt->execute();
- $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
- //print_r($result);
- ?>
+   // Création d'une requête SQL sur une table
+   $stmt = $pdo->prepare("SELECT * FROM infosJeu");
+   $stmt->execute();
+   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   //print_r($result);
+   ?>
 
-<div class="row no-gutters">
-    <?php foreach($result as $c) : ?>
-        <div class="col-4">
-            <div class="card" style="">
-                <img class="image_site" src="<?= $c[NumJeu] ?>.jpg" alt="<?= $c[Nom] ?>">
-                <div class="card-body">
-                    <h5 class="card-title"><?= $c[Nom] ?></h5>
-                    <a href="#" class="btn btn-primary">Plus de détails ici</a>
+  <div id="conteneur">
+    <h1 id="header"><a href="#" title="Colored Design - Accueil"><span>Colored Design</span></a></h1>
+
+    <nav>
+      <ul id="menu">
+        <label for="recherche">Rechercher :</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+<button>Entrer</button>
+      </ul>
+    </nav>
+
+	<div id="contenu">
+		<h2>Les jeux du moment</h2>
+    <div class="row no-gutters">
+        <?php foreach($result as $c) : ?>
+            <div class="col-4">
+                <div class="card" style="width: 202px; height: 450px">
+                    <img class="image_site" src="<?= $c[NumJeu] ?>.jpg" alt="<?= $c[Nom] ?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $c[Nom] ?></h5>
+                        <a href="<?= $c[NumJeu] ?>.php" class="btn btn-primary">Plus de détails ici</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
+    </div>
+		<h2>Meilleurs ventes</h2>
+		<p>Inserer jeu</p>
+		<h3>Précommande</h3>
+		<p>Inserer jeu</p>
+		<h3>Avis joueurs</h3>
+		<p>Inserer avis</p>
+  </div>
 </div>
- 
+
 <?php
 } catch(Exception $e) {
  echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
