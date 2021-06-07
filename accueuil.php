@@ -26,8 +26,8 @@ try{
 <div class="row no-gutters">
     <?php foreach($result as $c) : ?>
         <div class="col-4">
-            <div class="card-R6" style="">
-                <img class="image_R6" src="" alt="<?= $c[Nom] ?>">
+            <div class="card" style="">
+                <img class="image_site" src="<?= $c[NumJeu] ?>.jpg" alt="<?= $c[Nom] ?>">
                 <div class="card-body">
                     <h5 class="card-title"><?= $c[Nom] ?></h5>
                     <a href="#" class="btn btn-primary">Plus de détails ici</a>
