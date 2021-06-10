@@ -1,0 +1,127 @@
+body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background-color: : #8359A3 ;
+}
+
+div#conteneur
+{
+	width: 770px ;
+	margin: 0 auto ;
+	text-align: left ;
+	border: 2px solid #EE82EE ;
+	background: #fff ;
+}
+
+h1#header
+{
+	height: 258px ;
+	margin: 0 ;
+	background: url(insert-logo-here-red.jpg) no-repeat left top ;
+}
+
+h1#header a
+{
+	width: 400px ;
+	height: 70px ;
+	display: block ;
+	background: url(title.gif) no-repeat ;
+	position: relative ;
+	left: 350px ;
+	top: 15px ;
+	text-indent: -5000px ;
+}
+
+
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+
+}
+
+
+
+div#contenu
+{
+	padding: 0 25px 0 100px ;
+	background: url(bg_page.gif) no-repeat 15px 15px ;
+}
+
+div#contenu h2
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.4em ;
+	background: url(little_apple.gif) no-repeat left bottom ;
+	color: #7F00FF ;
+	border-bottom: 1px solid #7F00FF ;
+}
+
+div#contenu h3
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	border-bottom: 1px solid #7F00FF ;
+	border-left: 3px solid #7F00FF ;
+	color: #7F00FF ;
+}
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+
+div#contenu a
+{
+	color: #7F00FF ;
+}
+
+div#contenu a:hover
+{
+	color: #7F00FF ;
+}
+
+p#footer
+{
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #7F00FF ;
+}
+
+pre
+{
+	overflow: auto ;
+	background: #7F00FF ;
+	border: 2px solid #7F00FF ;
+	padding: 5px 0 0 5px ;
+	font-size: 1.2em ;
+}
+
+* html pre
+{
+	width: 636px ;
+}
+
+pre span
+{
+	color: #7F00FF ;
+}
+
+pre span.comment
+{
+	color: #b30000 ;
+}
+
+.image_site{
+	height: 250px;
+	width: 200px;
+}

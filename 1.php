@@ -3,6 +3,7 @@
 <head>
 
  <title>Tom Clancys Rainbow Six: Siege</title>
+ <link rel="stylesheet" href="style_tableau.css">
 
 </head>
 
@@ -13,7 +14,7 @@
    $pdo = new PDO('sqlite:jeux.db');
    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
-   echo "Connecté à la base SQLite jeux.db<br>";
+   //echo "Connecté à la base SQLite jeux.db<br>";
 
    // Création d'une requête SQL sur une table
    $stmt = $pdo->prepare("SELECT * FROM infosJeu WHERE Nom='Tom Clancys Rainbow Six: Siege'");
