@@ -9,6 +9,7 @@ body
 
 #liste_infos_jeu{
 	list-style: none;
+	text-align: center;
 }
 
 #logo{
