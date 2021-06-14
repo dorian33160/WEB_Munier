@@ -4,7 +4,17 @@ body
 	padding: 0 ;
 	text-align: center ;
 	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
-	background-color: : #8359A3 ;
+	background-color: : black;
+}
+
+#liste_infos_jeu{
+	list-style: none;
+}
+
+#logo{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div#conteneur
